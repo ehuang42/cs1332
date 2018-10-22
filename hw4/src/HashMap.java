@@ -71,15 +71,6 @@ public class HashMap<K, V> {
      * @return null if the key was not already in the map. If it was in the
      * map, return the old value associated with it
      */
-
-    // TODO
-//    [-3] Generics issues: @Line43,280,302;
-//    [-1] put(...) fails when the array is completely filled with Entries (i.e. no null spots),
-//      so when you iterate through the entire array, you will just exit the for loop and eventually
-//      return {null} @Line129 without placing the passed in {Key, Value} in the array at the {saved}
-//      index - Good job! (≧∇≦)/ - Brandon
-//    Brandon Hoang Vu, Jun 24 at 1:45pm
-
     public V put(K key, V value) {
         if (key == null) {
             throw new IllegalArgumentException("The key is null.");
